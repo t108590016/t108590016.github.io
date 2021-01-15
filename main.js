@@ -2,22 +2,16 @@
 var request = require("request");
 var $ = require("jquery");
 
-console.log("hello")
-
 
 $("#timeButton").click(function(){
-	console.log("time")
+	//console.log("time")
 	time()
 })
 
 $("#priceButton").click(function(){
-	console.log("price")
+	//console.log("price")
 	ticket_price()
 })
-
-function test() {
-	console.log("test")
-}
 
 var ticket_price = function() {
 	var e = document.getElementById("originStation");
@@ -142,6 +136,8 @@ var option = function() {
 					$("#Station").append(`<option value="${element.StationName.Zh_tw}">${element.StationName.Zh_tw}</option>`) //第一個是收回來的值，第二個是別人看到的
 					$("#originStation").append(`<option value="${element.StationName.Zh_tw}">${element.StationName.Zh_tw}</option>`) //第一個是收回來的值，第二個是別人看到的
 					$("#destinationStation").append(`<option value="${element.StationName.Zh_tw}">${element.StationName.Zh_tw}</option>`) //第一個是收回來的值，第二個是別人看到的	
+					$("#test").append(`<option value="${element.StationName.Zh_tw}">${element.StationName.Zh_tw}</option>`) //第一個是收回來的值，第二個是別人看到的	
+
 				}
 				//${}是變數的意思
 				i = i+1

@@ -1,12 +1,44 @@
 <html>
     <head>
         <title>FinalProject</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css">
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script src="./popper.min.js"></script>
+    <script src="./bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <!-- 第一個導覽列 ============================================================================= -->
+    <!-- navbar 表示這是一個 flex-box -->
+    <!-- navbar-expand-md 負責轉手機版的寬度, lg:991以下轉手機版, md:767以下轉手機版, sm:575以下轉手機版 -->
+    <!-- navbar-dark讓文字為白色, bg-dark負責背景顏色為暗底 -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <!--  這是 LOGO 文字或圖片  -->
+      <a class="navbar-brand" href="#">首頁</a>
+      <!--  這是手機版時右上角呈現的選單按鈕, 注意:data-target表示按下這個按鈕時要控制展開收合的物件ID名稱  -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- 這是按鈕上呈現的icon圖案 -->
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- navbar-collapse表示這個框架區塊是可收展開的, 注意:id名稱必須跟button中的data-target一樣 -->
+      <div class="collapse navbar-collapse" id="navbarNav1">
+        <!-- 這是一組靠左側的選單 -->
+        <ul class="navbar-nav">
+          <!-- active在視覺上設計底色不同,表示目前在這個位置,如果不需要則刪除  -->
+          <li class="nav-item active">
+            <a class="nav-link" href="./InStationTime.html">查詢進站資訊 <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./price.html">查詢票價</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
     </head>
     <body>
-        <div>
-            <button><a href="./InStationTime.html">查詢進站時間</a></button>
-            <button><a href="./price.html">查詢票價</a></button>
-        </div>
+
     	<script src="./bundle.js"></script>                     
 
     </body>
